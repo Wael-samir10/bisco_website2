@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BISCO - Industrial Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <style>
+    .rtl { direction: rtl; text-align: right; }
+    .ltr { direction: ltr; text-align: left; }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans ltr">
+    <header class="bg-gradient-to-r from-green-800 to-blue-800 text-white p-4 flex justify-between items-center shadow-md sticky top-0 z-50">
+        <!-- Left: Logo -->
+        <div class="flex items-center gap-4">
+          <img src="images/logo.png" alt="BISCO Logo" class="h-20" />
+        </div>
+      
+        <!-- Center: Navigation -->
+        <nav class="hidden md:flex space-x-6">
+          <a href="#about" id="nav-about" class="hover:underline ml-4">About Us</a>
+          <a href="#services" id="nav-services" class="hover:underline">Our Services</a>
+          <a href="#works" id="nav-works" class="hover:underline">Our Works</a>
+          <a href="#contact" id="nav-contact" class="hover:underline">Contact Us</a>
+        </nav>
+      
+        <!-- Right: Language Buttons -->
+        <div>
+          <button onclick="switchLang('en')" class="bg-white text-green-800 font-semibold px-4 py-1 rounded mr-2">English</button>
+          <button onclick="switchLang('ar')" class="bg-white text-green-800 font-semibold px-4 py-1 rounded">العربية</button>
+        </div>
+      </header>
+
+  <!-- About Section -->
+  <section id="about" class="p-10 bg-white border-b shadow-sm">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <img src="images/about.png" alt="About BISCO"/>
+      <div>
+        <h2 id="about-title" class="text-3xl font-bold mb-4">Who Are We</h2>
+        <p id="about-intro" class="text-xl font-semibold mb-4">Your Dreams Are Embodied In Our Productions...</p>
+        <p id="about-para1" class="text-gray-700 mb-4">
+          BISCO operates with dedication to meet modern industrial demands. Our services are grounded in honesty, technical expertise, and respect for both clients and innovation. We provide industrial automation solutions in Libya, focusing on PLCs, HMIs, VFDs, and production line modernization.
+        </p>
+        <p id="about-para2" class="text-gray-700 mb-4">
+          Our company serves industries including food, plastic, metal, furniture, and water bottling sectors. Our goal is to deliver advanced automation using the best technologies in control, pneumatics, and hydraulics.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-100 py-12">
+    <h2 id="services-title" class="text-3xl font-bold text-center text-green-700 mb-10">Our Services</h2>
+    <div class="swiper services-swiper max-w-6xl mx-auto px-4">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide p-4"><div class="bg-white rounded shadow-md overflow-hidden"><img src="images/service1.jpg" alt="" class="w-full h-48 object-cover"><div class="p-4"><h3 id="service1-title" class="font-semibold text-lg mb-2">PLC Programming</h3><p id="service1-desc">We provide advanced PLC programming.</p></div></div></div>
+        <div class="swiper-slide p-4"><div class="bg-white rounded shadow-md overflow-hidden"><img src="images/service2.jpg" alt="" class="w-full h-48 object-cover"><div class="p-4"><h3 id="service2-title" class="font-semibold text-lg mb-2">VFD Setup</h3><p id="service2-desc">Configuration of Variable Frequency Drives.</p></div></div></div>
+        <div class="swiper-slide p-4"><div class="bg-white rounded shadow-md overflow-hidden"><img src="images/service3.jpg" alt="" class="w-full h-48 object-cover"><div class="p-4"><h3 id="service3-title" class="font-semibold text-lg mb-2">HMI Interfaces</h3><p id="service3-desc">Custom Human-Machine Interface designs.</p></div></div></div>
+        <div class="swiper-slide p-4"><div class="bg-white rounded shadow-md overflow-hidden"><img src="images/service4.jpg" alt="" class="w-full h-48 object-cover"><div class="p-4"><h3 id="service4-title" class="font-semibold text-lg mb-2">Line Upgrade</h3><p id="service4-desc">Modernization of industrial lines.</p></div></div></div>
+        <div class="swiper-slide p-4"><div class="bg-white rounded shadow-md overflow-hidden"><img src="images/service5.jpg" alt="" class="w-full h-48 object-cover"><div class="p-4"><h3 id="service5-title" class="font-semibold text-lg mb-2">Control Systems</h3><p id="service5-desc">Installation of control panels.</p></div></div></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <!-- Works Section -->
+  <section id="works" class="py-12 bg-white">
+    <h2 id="works-title" class="text-3xl font-bold text-center text-green-700 mb-6">Our Works</h2>
+    <p id="works-desc" class="text-center text-gray-700 mb-10">Here are samples from our recent industrial automation projects.</p>
+    <div class="swiper works-swiper max-w-6xl mx-auto px-4">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide p-2"><img src="images/work1.jpg" alt="Work 1" class="rounded shadow w-full h-72 object-cover"></div>
+        <div class="swiper-slide p-2"><img src="images/work2.jpg" alt="Work 2" class="rounded shadow w-full h-72 object-cover"></div>
+        <div class="swiper-slide p-2"><img src="images/work3.jpg" alt="Work 3" class="rounded shadow w-full h-72 object-cover"></div>
+        <div class="swiper-slide p-2"><img src="images/work4.jpg" alt="Work 4" class="rounded shadow w-full h-72 object-cover"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-100 py-10">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 id="contact-title" class="text-3xl font-bold text-green-700 mb-4">Contact Us</h2>
+      <p id="contact-map" class="mb-2"><a href="#" class="text-blue-600 hover:underline">View on Google Maps</a></p>
+      <p id="contact-phone" class="mb-2">+218918155530</p>
+      <p id="contact-email" class="mb-2">info@bisco.ly</p>
+      <a href="#" class="inline-block mt-4"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" class="w-6" /></a>
+    </div>
+  </section>
+
+  <footer class="bg-green-800 text-white text-center py-4">
+    <p id="footer-rights">&copy; 2025 BISCO - All rights reserved</p>
+  </footer>
+
+  <script>
+    function initSwipers(isRTL = false) {
+  if (window.serviceSwiper) serviceSwiper.destroy(true, true);
+  if (window.worksSwiper) worksSwiper.destroy(true, true);
+
+  window.serviceSwiper = new Swiper('.services-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    rtl: isRTL,
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    breakpoints: { 768: { slidesPerView: 3 } }
+  });
+
+  window.worksSwiper = new Swiper('.works-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    rtl: isRTL,
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    breakpoints: { 768: { slidesPerView: 3 } }
+  });
+}
+    initSwipers();
+    const translations = {
+      en: {
+        navAbout: "About Us", navServices: "Our Services", navWorks: "Our Works", navContact: "Contact Us",
+        aboutTitle: "Who Are We", aboutIntro: "Your Dreams Are Embodied In Our Productions...",
+        aboutPara1: "BISCO operates with dedication to meet modern industrial demands. Our services are grounded in honesty, technical expertise, and respect for both clients and innovation. We provide industrial automation solutions in Libya, focusing on PLCs, HMIs, VFDs, and production line modernization.",
+        aboutPara2: "Our company serves industries including food, plastic, metal, furniture, and water bottling sectors. Our goal is to deliver advanced automation using the best technologies in control, pneumatics, and hydraulics.",
+        servicesTitle: "Our Services",
+        service1Title: "PLC Programming", service1Desc: "We provide advanced PLC programming.",
+        service2Title: "VFD Setup", service2Desc: "Configuration of Variable Frequency Drives.",
+        service3Title: "HMI Interfaces", service3Desc: "Custom Human-Machine Interface designs.",
+        service4Title: "Line Upgrade", service4Desc: "Modernization of industrial lines.",
+        service5Title: "Control Systems", service5Desc: "Installation of control panels.",
+        service6Title: "Automation", service6Desc: "Complete automation solutions.",
+        worksTitle: "Our Works", worksDesc: "Here are samples from our recent industrial automation projects.",
+        contactTitle: "Contact Us", contactMap: "View on Google Maps",
+        footerRights: "© 2025 BISCO - All rights reserved"
+      },
+      ar: {
+        navAbout: "من نحن", navServices: "خدماتنا", navWorks: "أعمالنا", navContact: "اتصل بنا",
+        aboutTitle: "من نحن", aboutIntro: "أحلامكم تتجسد في إنتاجنا...",
+        aboutPara1: "تعمل شركة براق لتلبية متطلبات الصناعة الحديثة. خدماتنا تستند إلى الصدق والخبرة التقنية والاحترام للعملاء والابتكار. نحن نقدم حلول الأتمتة الصناعية في ليبيا، مع التركيز على وحدات PLC وواجهات HMI ومحركات VFD وتحديث خطوط الإنتاج.",
+        aboutPara2: "نخدم الصناعات الغذائية والبلاستيكية والمعدنية والأثاث وتعبئة المياه. هدفنا هو تقديم الأتمتة المتقدمة باستخدام أفضل التقنيات في التحكم والهواء المضغوط والهيدروليك.",
+        servicesTitle: "خدماتنا",
+        service1Title: "برمجة PLC", service1Desc: "نقدم برمجة متقدمة لوحدات التحكم.",
+        service2Title: "إعداد VFD", service2Desc: "تهيئة محركات التردد المتغير.",
+        service3Title: "واجهات HMI", service3Desc: "تصاميم مخصصة لواجهات المستخدم.",
+        service4Title: "تحديث الخطوط", service4Desc: "تحديث خطوط الإنتاج الصناعية.",
+        service5Title: "أنظمة التحكم", service5Desc: "تركيب لوحات التحكم.",
+        service6Title: "الأتمتة", service6Desc: "حلول أتمتة متكاملة.",
+        worksTitle: "أعمالنا", worksDesc: "نماذج من مشاريع الأتمتة الصناعية الحديثة.",
+        contactTitle: "اتصل بنا", contactMap: "عرض على خرائط جوجل",
+        footerRights: "© 2025 براق - جميع الحقوق محفوظة"
+      }
+    };
+
+    function switchLang(lang) {
+      document.documentElement.lang = lang;
+      document.body.className = lang === 'ar' ? 'rtl' : 'ltr';
+      const t = translations[lang];
+      const map = {
+        "nav-about": t.navAbout, "nav-services": t.navServices, "nav-works": t.navWorks, "nav-contact": t.navContact,
+        "about-title": t.aboutTitle, "about-intro": t.aboutIntro, "about-para1": t.aboutPara1, "about-para2": t.aboutPara2,
+        "services-title": t.servicesTitle,
+        "service1-title": t.service1Title, "service1-desc": t.service1Desc,
+        "service2-title": t.service2Title, "service2-desc": t.service2Desc,
+        "service3-title": t.service3Title, "service3-desc": t.service3Desc,
+        "service4-title": t.service4Title, "service4-desc": t.service4Desc,
+        "service5-title": t.service5Title, "service5-desc": t.service5Desc,
+        "service6-title": t.service6Title, "service6-desc": t.service6Desc,
+        "works-title": t.worksTitle, "works-desc": t.worksDesc,
+        "contact-title": t.contactTitle, "footer-rights": t.footerRights
+      };
+      for (let id in map) {
+        let el = document.getElementById(id);
+        if (el) el.textContent = map[id];
+      }
+      document.querySelector("#contact-map a").textContent = t.contactMap;
+      initSwipers(lang === 'ar');
+    }
+  </script>
+</body>
+</html>
